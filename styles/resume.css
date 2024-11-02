@@ -1,0 +1,184 @@
+* {
+    margin: 0%;
+    padding: 0;
+    font-family:  "Montserrat", sans-serif
+}
+
+#content-divider {
+        border-top: 1px solid #575757;
+        width: 90%; 
+        margin: 40px auto;
+}
+
+.main-profile {
+    text-align: center;
+}
+
+#header-name {
+
+    margin: auto;
+    color: #575757;
+    font-size: 35pt;
+    font-weight: 400;
+}
+
+#header-description { 
+    text-transform: uppercase;
+    font-size: 12pt;
+    color: #575757;
+    font-weight: 400;
+    margin-bottom: 6%;
+}
+
+
+.second-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 80px 40px;
+    color: #575757;
+}
+
+.left-card-info, .right-card-info {
+    width: 45%;
+}
+
+.left-card-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-card-info ul li {
+    margin-bottom: 10px;
+}
+
+.fa {
+    margin-right: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .second-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-card-info, .right-card-info {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
+#second-content-divider {
+    border-top: 1px solid #575757;
+    width: 90%; 
+    margin: 0px auto;
+}
+
+
+.third-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 80px 0px;
+    color: #575757;
+}
+
+.left-card-info, .right-card-info {
+    width: 45%;
+}
+
+.left-card-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-card-info ul li {
+    margin-bottom: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+    .third-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+
+    .left-card-info, .right-card-info {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+#second-content-divider {
+    border-top: 1px solid #575757;
+    width: 90%; 
+    margin: 0px auto;
+}
+
+
+.experience-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+#job-title {
+    margin: 0 0 10px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.work-experience-info{
+    margin-bottom: 60px;
+}
+
+
+.custom-section {
+    width: 60%;
+}
+
+
+
+
+
+
+.card-info {
+    width: 45%;;
+}
+
+.card-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card-info ul li {
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .card-info {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
+
+#divider {
+    border-top: 1px solid #575757;
+    width: 90%; 
+    margin: 20px 0px;
+}
+
+
+
+
+#end-scale {
+    border-top: 1px solid #575757;
+    width: 90%; 
+    margin: 0px auto 40px;
+}

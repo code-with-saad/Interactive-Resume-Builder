@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Resume Builder</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/YOUR_VERSION/css/all.min.css">
+</head>
+<body>
+
+  <div class="header">
+    <a class="logo">
+      Resume Builder</a>
+    <div class="header-right">
+      <a href="#resumeForm" id="create-resume">Create Your Resume</a>
+      <a href="./resume.html" id="create-resume">View Static Resume</a>
+    </div>
+  </div>
+
+  
+  <form id="resumeForm">
+
+    <div class="personal-info">
+
+    <div>
+      <h1 id="heading">PERSONAL INFO</h1>
+      <label for="Name">Name <span>*</span></label>
+      <input required  id="name" type="text" placeholder="Enter Your Name">
+      <span class="error-message"></span>
+    </div>
+
+    <div>
+      <label for="designation">Designation <span>*</span></label>
+      <input required  id="designation" type="text" placeholder="Enter Your Designation">
+      <span class="error-message"></span>
+    </div>
+    <div>
+      <label for="contact">Contact <span>*</span></label>
+      <input required  id="contact" type="tel" maxlength="15" placeholder="Enter Your Contact No">
+      <span class="error-message"></span>
+    </div>
+    <div>
+      <label for="email">Email <span>*</span></label>
+      <input required  id="email" type="email" placeholder="Enter Your Email">
+      <span class="error-message"></span>
+    </div>
+  </div>
+
+  
+    <div class="education">
+      <div>
+        <h1 id="heading">EDUCATION</h1>
+        <label for="education">Add Education (Comma Seperated) <span>*</span></label>
+         <textarea required  name="education" id="education" rows="5" placeholder="e.g: degree in Feild at InstitueName (startDate - endDate)"></textarea>
+        <span class="error-message"></span>
+      </div>
+  </div>
+
+
+  <div class="work-experience">
+    <div>
+      <h1 id="heading">Work Experience</h1>
+      <label for="work-Experience">Add Work Experience (Comma Seperated) <span>*</span></label>
+       <textarea required  name="work-Experience" id="workExperience" rows="5" placeholder="e.g: JobTitle at CompanyName (startDate - endDate)"></textarea>
+      <span class="error-message"></span>
+    </div>
+  </div>
+
+
+  <div class="skills">
+
+    <div>
+      <h1 id="heading">SKILLS</h1>
+      <label for="list-skills">List Your Skills (Comma Seperated) <span>*</span></label>
+       <textarea required  name="list-skills" id="listSkills" rows="5"></textarea>
+      <span class="error-message"></span>
+    </div>
+  </div>
+  
+
+    <button type="submit" id="generate" >GENERATE RESUME BELOW </button>
+  </form>
+
+
+  <!-- <div class="generated-resume">
+    <h1></h1>
+
+    <div class="main-profile">
+      <h1 id="user-name"></h1>
+      <h3 id="user-designation"></h3>
+    </div>
+
+    
+    
+  </div> -->
+
+
+  <div id="resumeOutput">
+    <!-- Resume will be Generated Below -->
+
+  </div>
+
+
+  <button id="downloadPdf">Download PDF</button>
+
+
+
+<script src="./scripts/script.js"></script>
+
+
+
+
+
+
+
+<script src="https://kit.fontawesome.com/62deb8689a.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+
+  </body>
+</html>
